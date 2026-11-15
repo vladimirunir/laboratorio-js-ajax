@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laboratorio universitario de JavaScript y AJAX.">
+  <title>Laboratorio JavaScript & AJAX</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/javascript.js" defer></script>
+  <script src="js/ajax.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Laboratorio<span class="brand-light"> JS & AJAX</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#javascript">JavaScript</a>
+        <a href="#ajax">AJAX</a>
+        <a href="#acerca">Acerca del proyecto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow"><span class="status-dot"></span> PRÁCTICA DE DESARROLLO WEB</p>
+          <h1>Explora el poder de <span>JavaScript</span> y AJAX.</h1>
+          <p class="hero-copy">Un laboratorio interactivo para practicar lógica de programación, manipulación de cadenas y comunicación asíncrona con servidores.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#javascript">Comenzar ejercicios <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#ajax">Ir a AJAX</a>
+          </div>
+          <div class="hero-meta">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript puro</span>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Resumen del laboratorio">
+          <div class="terminal-top"><i></i><i></i><i></i><span>laboratorio.js</span></div>
+          <div class="terminal-code">
+            <p><span class="code-purple">const</span> laboratorio = {</p>
+            <p class="indent"><span class="code-blue">tecnologias</span>: [</p>
+            <p class="indent2"><span class="code-green">"JavaScript"</span>,</p>
+            <p class="indent2"><span class="code-green">"AJAX"</span></p>
+            <p class="indent">],</p>
+            <p class="indent"><span class="code-blue">ejercicios</span>: <span class="code-orange">9</span>,</p>
+            <p class="indent"><span class="code-blue">estado</span>: <span class="code-green">"En marcha"</span></p>
+            <p>};</p>
+            <p class="terminal-comment">// Aprender haciendo.</p>
+          </div>
+          <div class="terminal-footer"><span class="status-dot"></span> Entorno preparado</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="javascript">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">BLOQUE 01 · LÓGICA DE PROGRAMACIÓN</p><h2>Ejercicios de JavaScript</h2></div>
+          <p>Cuatro retos para trabajar cadenas de texto, números, condiciones y recorridos.</p>
+        </div>
+
+        <div class="exercise-grid">
+          <article class="panel exercise-card">
+            <div class="card-heading"><span class="icon-bubble purple">↔</span><span class="tag">Ejercicio 01</span></div>
+            <h3>Detector de palíndromos</h3>
+            <p class="card-description">Comprueba si una palabra o frase se lee igual en ambos sentidos.</p>
+            <label for="palindrome-input">Introduce una palabra o frase</label>
+            <input id="palindrome-input" type="text" placeholder="Ej. Dábale arroz a la zorra el abad">
+            <button class="button button-primary full-width" id="palindrome-button">Comprobar palíndromo</button>
+            <div class="result" id="palindrome-result" aria-live="polite">El resultado aparecerá aquí.</div>
+          </article>
+
+          <article class="panel exercise-card">
+            <div class="card-heading"><span class="icon-bubble green">⇄</span><span class="tag">Ejercicio 02</span></div>
+            <h3>Comparar dos números</h3>
+            <p class="card-description">Introduce dos valores y averigua cuál es mayor o si son iguales.</p>
+            <div class="input-pair">
+              <div><label for="number-one">Primer número</label><input id="number-one" type="number" step="any" placeholder="Ej. 25"></div>
+              <div><label for="number-two">Segundo número</label><input id="number-two" type="number" step="any" placeholder="Ej. 18"></div>
+            </div>
+            <button class="button button-primary full-width" id="compare-button">Comparar números</button>
+            <div class="result" id="compare-result" aria-live="polite">El resultado aparecerá aquí.</div>
+          </article>
+
+          <article class="panel exercise-card">
+            <div class="card-heading"><span class="icon-bubble orange">Aa</span><span class="tag">Ejercicio 03</span></div>
+            <h3>Encontrar las vocales</h3>
+            <p class="card-description">Extrae las vocales que aparecen en una frase, sin repetirlas.</p>
+            <label for="vowels-input">Escribe una frase</label>
+            <input id="vowels-input" type="text" placeholder="Ej. Desarrollo web">
+            <button class="button button-primary full-width" id="vowels-button">Encontrar vocales</button>
+            <div class="result" id="vowels-result" aria-live="polite">El resultado aparecerá aquí.</div>
+          </article>
+
+          <article class="panel exercise-card">
+            <div class="card-heading"><span class="icon-bubble blue">∑</span><span class="tag">Ejercicio 04</span></div>
+            <h3>Contar las vocales</h3>
+            <p class="card-description">Cuenta las apariciones de cada vocal y calcula el total.</p>
+            <label for="count-vowels-input">Escribe una frase</label>
+            <input id="count-vowels-input" type="text" placeholder="Ej. Hola, ¿cómo estás?">
+            <button class="button button-primary full-width" id="count-vowels-button">Contar vocales</button>
+            <div class="result" id="count-vowels-result" aria-live="polite">El resultado aparecerá aquí.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ajax-section" id="ajax">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">BLOQUE 02 · COMUNICACIÓN ASÍNCRONA</p><h2>Laboratorio AJAX</h2></div>
+          <p>Realiza una petición HTTP y observa la respuesta, sus estados y sus cabeceras.</p>
+        </div>
+
+        <div class="ajax-layout">
+          <article class="panel ajax-request">
+            <div class="card-heading"><span class="icon-bubble blue">↗</span><span class="tag">Petición HTTP GET</span></div>
+            <h3>Solicitar contenido</h3>
+            <p class="card-description">Introduce una URL para solicitar su contenido al servidor.</p>
+            <label for="ajax-url">Dirección URL</label>
+            <input id="ajax-url" type="url" placeholder="https://ejemplo.com">
+            <div class="request-actions">
+              <button class="button button-primary" id="ajax-send">Mostrar contenidos</button>
+              <button class="button button-secondary" id="ajax-clear" type="button">Limpiar</button>
+            </div>
+            <p class="helper-text">La URL inicial se completa automáticamente con la dirección de esta página. Para consultar otro dominio, el servidor debe permitir CORS.</p>
+            <div class="request-status">
+              <div><span class="label-muted">Estado de la petición</span><strong id="ajax-state" class="state-pill">No iniciada</strong></div>
+              <div><span class="label-muted">Progreso</span><span id="ajax-ready-state">readyState: 0</span></div>
+            </div>
+          </article>
+
+          <article class="panel response-panel">
+            <div class="response-title"><div><p class="eyebrow">RESPUESTA DEL SERVIDOR</p><h3>Contenido recibido</h3></div><span class="response-indicator" id="ajax-indicator">En espera</span></div>
+            <pre class="response-content" id="ajax-content" aria-live="polite">Aquí aparecerá el contenido devuelto por el servidor.</pre>
+          </article>
+        </div>
+
+        <div class="ajax-details">
+          <article class="panel detail-panel">
+            <div class="detail-heading"><span class="icon-bubble green">HTTP</span><div><h3>Código de estado</h3><p>Resultado de la respuesta HTTP</p></div></div>
+            <div class="http-code" id="ajax-status-code">—</div>
+            <p class="muted" id="ajax-status-text">Todavía no se ha realizado ninguna petición.</p>
+          </article>
+          <article class="panel detail-panel">
+            <div class="detail-heading"><span class="icon-bubble purple">≡</span><div><h3>Cabeceras HTTP</h3><p>Metadatos enviados por el servidor</p></div></div>
+            <pre class="headers-content" id="ajax-headers">Las cabeceras aparecerán cuando el servidor responda.</pre>
+          </article>
+        </div>
+        <p class="ajax-note"><strong>Nota técnica:</strong> una petición al mismo origen suele estar permitida. Las peticiones a otros dominios pueden ser bloqueadas por la política CORS del navegador. Una respuesta HTTP 404 o 500 también es una respuesta completada: se mostrará su código y contenido si el navegador permite acceder a ellos.</p>
+      </div>
+    </section>
+
+    <section class="section about-section" id="acerca">
+      <div class="container about-grid">
+        <div><p class="eyebrow">SOBRE EL LABORATORIO</p><h2>Aprender los fundamentos construyendo.</h2></div>
+        <div><p>Este proyecto reúne ejercicios prácticos de JavaScript y una demostración de comunicación asíncrona mediante XMLHttpRequest. El código está separado por responsabilidades para facilitar su lectura, mantenimiento y ampliación.</p><p class="muted">Actividad académica · Desarrollo de Aplicaciones en Red</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content"><span>Laboratorio JavaScript & AJAX</span><span>Proyecto académico · 2026</span></div>
+  </footer>
+</body>
+</html>
